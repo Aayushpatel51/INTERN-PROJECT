@@ -1,0 +1,128 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.menu-btn {
+  margin-left: 100px !important;
+  margin-right:100px !important; 
+  cursor: pointer;
+}
+.menu-app{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start !important;
+}
+.menu-name{
+  display: flex;
+  flex: 1;
+  justify-content:space-evenly;
+}
+.logo{
+  cursor: pointer;
+}
+
+.social-div{
+  justify-content: space-evenly;
+  height: 500px;
+  align-items: center;
+}
+.icon-soci{
+  font-size:65px !important;
+}
+.pin{
+  color: 	#E60023 !important;
+}
+.you{
+  color: #FF0000 !important;
+}
+.insta{
+  color: #bc2a8d !important;
+}
+.face{
+  color: 	#4267B2 !important;
+}
+.allSoc{
+  color:  #3f729b !important;
+}
+.about, .contact{
+  display: flex;
+  justify-content:center;
+}
+.about-div{
+  display: flex;
+}
+.about-right-div{
+  width: 50%;
+  display: flex;
+  justify-content:center;
+  flex-direction:column;
+  padding: 100px;
+}
+.about-right-div h1, .about-right-div p{
+  padding: 0 165px;
+}
+.about-right-div p{
+  font-size: 22px;
+}
+.svg-image{
+  display: flex;
+  justify-content:center;
+  width: 50%;
+}
+#right-small{
+  animation: animate 5s infinite linear;
+}
+@keyframes animate{
+    0%{
+      transform: translateX(0%)
+    }
+    50%{
+      transform: translateX(1.5%)
+    }
+    100%{
+      transform: translateX(0%)
+    }
+}
+#left-small{
+  animation: animate 6s infinite linear;
+}
+#cycle{
+  animation: animate 6s infinite linear;
+}
+
+.contact-form{
+  display: flex;
+  justify-content:center;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 100px;
+  align-items: center;
+}
+.form-field{
+  width: 30%;
+  margin: 10px 0 !important;
+}
+
+.form-btn{
+  width:10%;
+  margin-top:20px !important;
+}
+
+@media only screen and (max-width: 600px){
+  .searchbar{
+    width: 21% !important;
+  }
+  .logo{
+    flex-grow: 1;
+  }
+}
